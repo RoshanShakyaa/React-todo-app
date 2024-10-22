@@ -21,7 +21,7 @@ const TodoList = ({
             handleCompleteTodo={handleCompleteTodo}
             handleDeleteTodo={handleDeleteTodo}
             key={todoIndex}
-            todoIndex={todoIndex}
+            todoIndex={todos.findIndex((val) => val.input === todo.input)}
             todo={todo}
           />
         );
